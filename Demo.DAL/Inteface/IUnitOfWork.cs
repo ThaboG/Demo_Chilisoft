@@ -12,6 +12,7 @@ namespace Demo.DAL.Inteface
         IEmployees Employees { get; }
         IUser User { get; }
         IDepartments Departments { get; }
+        IErrorLog ErrorLog { get; }
         /// <summary>
         /// Save
         /// </summary>

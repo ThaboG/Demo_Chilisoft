@@ -128,5 +128,6 @@ namespace Demo.DAL.DataContext
             public DbSet<UserAdminRel> UserAdminRels { get; set; }
             public DbSet<Books> Books { get; set; }
             public DbSet<Employees> Employees { get; set; }
+            public DbSet<ErrorLog> ErrorLog { get; set; }
         }
 }

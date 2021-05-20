@@ -18,6 +18,7 @@ namespace Demo.DAL.Data
             User = new UsersRepository(_context);
             Employees = new EmployeesRepository(_context);
             Departments = new DepartmentsRepository(_context);
+            ErrorLog = new ErrorLogRepository(_context);
         }
 
         public IApiUsers ApiUsers { get; private set; }
@@ -28,6 +29,8 @@ namespace Demo.DAL.Data
 
         public IEmployees Employees { get; private set; }
         public IDepartments Departments { get; private set; }
+
+        public IErrorLog ErrorLog { get; private set; }
 
         public int Complete()
         {

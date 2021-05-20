@@ -63,6 +63,7 @@ namespace Demo.Web.Controllers
             }
             catch (Exception Exc)
             {
+                Exc.Log();
                 ModelState.AddModelError(string.Empty, Exc.Message);
                 return View(login);
             }
